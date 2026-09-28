@@ -1,9 +1,9 @@
 // =====================================================
 // CAMBIA SOLO ESTA LÍNEA POR VUESTRA FECHA.
 // Formato: DDMMYY
-// Ejemplo: 08/09/2025 = "080925"
+// Ejemplo: 08/10/2025 = "081025"
 // =====================================================
-const correctCode = "080925";
+const correctCode = "081025";
 
 let code = "";
 
