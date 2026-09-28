@@ -202,4 +202,68 @@ document.getElementById("again").addEventListener("click", () => {
   clearCode();
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+html, body {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  color: white;
+  font-family: Arial, sans-serif;
+  background:
+    radial-gradient(circle at 15% 10%, rgba(255, 0, 145, .65), transparent 25%),
+    radial-gradient(circle at 85% 30%, rgba(255, 0, 120, .45), transparent 30%),
+    radial-gradient(circle at 50% 90%, rgba(115, 0, 85, .5), transparent 35%),
+    #050007;
+}
+
+#stars,
+#hearts {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.star {
+  position: absolute;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 0 8px white;
+  animation: twinkle 2s infinite alternate;
+}
+
+.heart {
+  position: absolute;
+  color: #ff238e;
+  font-size: 22px;
+  opacity: .75;
+  animation: floatUp linear forwards;
+  text-shadow: 0 0 10px #ff0080;
+}
+
+.top {
+  position: relative;
+  z-index: 2;
+  height: 135px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    rgba(255, 0, 145, .65),
+    rgba(255, 0, 90, .18)
+  );
+  box-shadow: 0 0 35px rgba(255, 0, 140, .7);
+}
+
+.brand {
+  font-size: 34px;
+  letter-spacing: 3px;
